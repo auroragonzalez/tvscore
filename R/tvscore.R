@@ -1,3 +1,5 @@
+library(mgcv)
+load("data/tv_model.rda")
 tv <- function(input){
   #input can either be csv file or data
   newdata <- if(is.character(input) && file.exists(input)){
